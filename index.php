@@ -43,8 +43,10 @@ $items = $itemsQuery->rowCount() ? $itemsQuery : [];
             <?php foreach ($items as $item):?>
                 <li>
                     <span class="item<?php echo $item['done'] ? ' done' : '' ?>"><?php echo $item['name']; ?></span>
-                    <?php if($item['done']):?>
-                    <a href="#" class="done-btn">Done</a>
+                    <?php if(!$item['done']):?>
+                    <a href="mark_done.php?is=done&item=<?php echo $item['id'] ?>" class="done-btn">Done</a>
+                    <?php else: ?>
+                        <a href="mark_done.php?is=not-done&item=<?php echo $item['id'] ?>" class="done-btn">Unmark</a>
                         <?php endif; ?>
                 </li>
 

@@ -9,7 +9,7 @@ session_start();
 
 $_SESSION['user_id'] = 1;
 
-$db = new PDO('mysql:dbname=test;host=127.0.0.1', 'root', '1qaz@WSX3edc$RFV');
+$db = new PDO('mysql:dbname=test;host=127.0.0.1', 'root', 'x');
 
 
 //Used for demo purposes
