@@ -1,0 +1,97 @@
+body{
+    background: #eeeeee;
+}
+
+body,
+input{
+    font: 1em "Open Sans", sans-serif;
+    color: #363639;
+}
+
+a{
+    text-decoration: none;
+    border-bottom: 1px dashed #363639;
+}
+
+
+/*List*/
+.list{
+    background-color: #fff;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, .1);
+}
+
+.list .header{
+    font-family: "Srisakdi", cursive;
+    margin: 0 0 10px 0;
+}
+
+/*List Items*/
+.items{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.items .item.done{
+    text-decoration: line-through;
+    opacity: 0.85;
+}
+
+.items li:hover{
+    background-color: #fbfbfb;
+}
+
+.items li:hover .done-btn{
+    opacity: 1;
+}
+
+.items li,
+.item-add .input1{
+    border: 0;
+    border-bottom: 1px dashed #bbbbbb;
+    padding: 15px 0;
+}
+
+/*Input*/
+.input1{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input1:focus{
+    outline: none;
+}
+
+/*Submit Button*/
+.submit{
+    background-color: #fdfdfd;
+    padding:5px 10px;
+    border: 1px solid #bbbbbb;
+    width: 100%;
+    box-shadow: 3px 3px 0 #d9eff1;
+}
+
+.submit:hover{
+    background-color: #f3f3f3;
+    box-shadow: 5px 5px #d9eff1;
+}
+
+
+/*Done button*/
+.done-btn{
+    display: inline-block;
+    font-size: 0.8em;
+    background-color: #d9eff1;
+    color: #363639;
+    padding: 3px 6px;
+    border: 0;
+    opacity: 0.45;
+    border-radius: 5px;
+}
+
